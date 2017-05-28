@@ -1,0 +1,4 @@
+module cmark {
+    umbrella header "/Users/louisdhauwe/projects/oss/silverfox-gen/generator/.build/checkouts/cmark-gfm.git--2110685907467657036/Sources/cmark/include/cmark.h"
+    export *
+}

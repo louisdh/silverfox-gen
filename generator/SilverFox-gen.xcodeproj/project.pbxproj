@@ -1,0 +1,836 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		OBJ_100 /* syntax_extension.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* syntax_extension.c */; };
+		OBJ_101 /* table.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* table.c */; };
+		OBJ_102 /* tagfilter.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* tagfilter.c */; };
+		OBJ_103 /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* utf8.c */; };
+		OBJ_104 /* xml.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* xml.c */; };
+		OBJ_111 /* SwiftMarkdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* SwiftMarkdown.swift */; };
+		OBJ_113 /* cmark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* cmark.framework */; };
+		OBJ_120 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Files.swift */; };
+		OBJ_127 /* ArticleGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* ArticleGenerator.swift */; };
+		OBJ_128 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* main.swift */; };
+		OBJ_129 /* NewsItemGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* NewsItemGenerator.swift */; };
+		OBJ_130 /* RSSGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* RSSGenerator.swift */; };
+		OBJ_131 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Article.swift */; };
+		OBJ_132 /* ArticleMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* ArticleMetadata.swift */; };
+		OBJ_133 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* NewsItem.swift */; };
+		OBJ_134 /* Array+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Array+Dictionary.swift */; };
+		OBJ_135 /* String+Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* String+Substring.swift */; };
+		OBJ_136 /* String+SyntaxHighlighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* String+SyntaxHighlighting.swift */; };
+		OBJ_138 /* cmark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* cmark.framework */; };
+		OBJ_139 /* SwiftMarkdown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* SwiftMarkdown.framework */; };
+		OBJ_140 /* Files.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* Files.framework */; };
+		OBJ_75 /* arena.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* arena.c */; };
+		OBJ_76 /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* autolink.c */; };
+		OBJ_77 /* blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* blocks.c */; };
+		OBJ_78 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* buffer.c */; };
+		OBJ_79 /* cmark.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* cmark.c */; };
+		OBJ_80 /* cmark_ctype.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* cmark_ctype.c */; };
+		OBJ_81 /* commonmark.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* commonmark.c */; };
+		OBJ_82 /* core-extensions.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* core-extensions.c */; };
+		OBJ_83 /* ext_scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* ext_scanners.c */; };
+		OBJ_84 /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* houdini_href_e.c */; };
+		OBJ_85 /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* houdini_html_e.c */; };
+		OBJ_86 /* houdini_html_u.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* houdini_html_u.c */; };
+		OBJ_87 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* html.c */; };
+		OBJ_88 /* inlines.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* inlines.c */; };
+		OBJ_89 /* iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* iterator.c */; };
+		OBJ_90 /* latex.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* latex.c */; };
+		OBJ_91 /* linked_list.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* linked_list.c */; };
+		OBJ_92 /* man.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* man.c */; };
+		OBJ_93 /* node.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* node.c */; };
+		OBJ_94 /* plugin.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* plugin.c */; };
+		OBJ_95 /* references.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* references.c */; };
+		OBJ_96 /* registry.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* registry.c */; };
+		OBJ_97 /* render.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* render.c */; };
+		OBJ_98 /* scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* scanners.c */; };
+		OBJ_99 /* strikethrough.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* strikethrough.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE3F25F31EDB67D800D58C83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_69;
+			remoteInfo = cmark;
+		};
+		BE3F25F41EDB67D800D58C83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_69;
+			remoteInfo = cmark;
+		};
+		BE3F25F51EDB67D800D58C83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_106;
+			remoteInfo = SwiftMarkdown;
+		};
+		BE3F25F61EDB67D800D58C83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_115;
+			remoteInfo = Files;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		OBJ_10 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		OBJ_11 /* NewsItemGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemGenerator.swift; sourceTree = "<group>"; };
+		OBJ_12 /* RSSGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSGenerator.swift; sourceTree = "<group>"; };
+		OBJ_14 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		OBJ_15 /* ArticleMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleMetadata.swift; sourceTree = "<group>"; };
+		OBJ_16 /* NewsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
+		OBJ_18 /* Array+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Dictionary.swift"; sourceTree = "<group>"; };
+		OBJ_19 /* String+Substring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Substring.swift"; sourceTree = "<group>"; };
+		OBJ_20 /* String+SyntaxHighlighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SyntaxHighlighting.swift"; sourceTree = "<group>"; };
+		OBJ_22 /* SilverFox-gen */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SilverFox-gen"; sourceTree = SOURCE_ROOT; };
+		OBJ_25 /* Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
+		OBJ_28 /* SwiftMarkdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMarkdown.swift; sourceTree = "<group>"; };
+		OBJ_31 /* arena.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = arena.c; sourceTree = "<group>"; };
+		OBJ_32 /* autolink.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = autolink.c; sourceTree = "<group>"; };
+		OBJ_33 /* blocks.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = blocks.c; sourceTree = "<group>"; };
+		OBJ_34 /* buffer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = buffer.c; sourceTree = "<group>"; };
+		OBJ_35 /* cmark.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cmark.c; sourceTree = "<group>"; };
+		OBJ_36 /* cmark_ctype.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cmark_ctype.c; sourceTree = "<group>"; };
+		OBJ_37 /* commonmark.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = commonmark.c; sourceTree = "<group>"; };
+		OBJ_38 /* core-extensions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "core-extensions.c"; sourceTree = "<group>"; };
+		OBJ_39 /* ext_scanners.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ext_scanners.c; sourceTree = "<group>"; };
+		OBJ_40 /* houdini_href_e.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = houdini_href_e.c; sourceTree = "<group>"; };
+		OBJ_41 /* houdini_html_e.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = houdini_html_e.c; sourceTree = "<group>"; };
+		OBJ_42 /* houdini_html_u.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = houdini_html_u.c; sourceTree = "<group>"; };
+		OBJ_43 /* html.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = html.c; sourceTree = "<group>"; };
+		OBJ_44 /* inlines.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = inlines.c; sourceTree = "<group>"; };
+		OBJ_45 /* iterator.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = iterator.c; sourceTree = "<group>"; };
+		OBJ_46 /* latex.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = latex.c; sourceTree = "<group>"; };
+		OBJ_47 /* linked_list.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = linked_list.c; sourceTree = "<group>"; };
+		OBJ_48 /* man.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = man.c; sourceTree = "<group>"; };
+		OBJ_49 /* node.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = node.c; sourceTree = "<group>"; };
+		OBJ_50 /* plugin.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = plugin.c; sourceTree = "<group>"; };
+		OBJ_51 /* references.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = references.c; sourceTree = "<group>"; };
+		OBJ_52 /* registry.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = registry.c; sourceTree = "<group>"; };
+		OBJ_53 /* render.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = render.c; sourceTree = "<group>"; };
+		OBJ_54 /* scanners.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = scanners.c; sourceTree = "<group>"; };
+		OBJ_55 /* strikethrough.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = strikethrough.c; sourceTree = "<group>"; };
+		OBJ_56 /* syntax_extension.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = syntax_extension.c; sourceTree = "<group>"; };
+		OBJ_57 /* table.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = table.c; sourceTree = "<group>"; };
+		OBJ_58 /* tagfilter.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tagfilter.c; sourceTree = "<group>"; };
+		OBJ_59 /* utf8.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = utf8.c; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* xml.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xml.c; sourceTree = "<group>"; };
+		OBJ_62 /* cmark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cmark.h; sourceTree = "<group>"; };
+		OBJ_63 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = "/Users/louisdhauwe/projects/oss/silverfox-gen/generator/SilverFox-gen.xcodeproj/GeneratedModuleMap/cmark/module.modulemap"; sourceTree = "<group>"; };
+		OBJ_65 /* cmark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = cmark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_66 /* SwiftMarkdown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftMarkdown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_67 /* Files.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Files.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_68 /* SilverFox-gen */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SilverFox-gen"; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_9 /* ArticleGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleGenerator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_112 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_113 /* cmark.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_121 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_137 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_138 /* cmark.framework in Frameworks */,
+				OBJ_139 /* SwiftMarkdown.framework in Frameworks */,
+				OBJ_140 /* Files.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_14 /* Article.swift */,
+				OBJ_15 /* ArticleMetadata.swift */,
+				OBJ_16 /* NewsItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		OBJ_17 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_18 /* Array+Dictionary.swift */,
+				OBJ_19 /* String+Substring.swift */,
+				OBJ_20 /* String+SyntaxHighlighting.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		OBJ_21 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_23 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_24 /* Files 1.8.0 */,
+				OBJ_26 /* SwiftMarkdown 0.3.0 */,
+				OBJ_29 /* cmark 1.0.0 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_24 /* Files 1.8.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_25 /* Files.swift */,
+			);
+			name = "Files 1.8.0";
+			path = ".build/checkouts/Files.git-6739420172119258925/Sources";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_26 /* SwiftMarkdown 0.3.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_27 /* SwiftMarkdown */,
+			);
+			name = "SwiftMarkdown 0.3.0";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_27 /* SwiftMarkdown */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_28 /* SwiftMarkdown.swift */,
+			);
+			name = SwiftMarkdown;
+			path = ".build/checkouts/markdown.git--6394668354368104074/Sources/SwiftMarkdown";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_29 /* cmark 1.0.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_30 /* cmark */,
+			);
+			name = "cmark 1.0.0";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_30 /* cmark */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_31 /* arena.c */,
+				OBJ_32 /* autolink.c */,
+				OBJ_33 /* blocks.c */,
+				OBJ_34 /* buffer.c */,
+				OBJ_35 /* cmark.c */,
+				OBJ_36 /* cmark_ctype.c */,
+				OBJ_37 /* commonmark.c */,
+				OBJ_38 /* core-extensions.c */,
+				OBJ_39 /* ext_scanners.c */,
+				OBJ_40 /* houdini_href_e.c */,
+				OBJ_41 /* houdini_html_e.c */,
+				OBJ_42 /* houdini_html_u.c */,
+				OBJ_43 /* html.c */,
+				OBJ_44 /* inlines.c */,
+				OBJ_45 /* iterator.c */,
+				OBJ_46 /* latex.c */,
+				OBJ_47 /* linked_list.c */,
+				OBJ_48 /* man.c */,
+				OBJ_49 /* node.c */,
+				OBJ_50 /* plugin.c */,
+				OBJ_51 /* references.c */,
+				OBJ_52 /* registry.c */,
+				OBJ_53 /* render.c */,
+				OBJ_54 /* scanners.c */,
+				OBJ_55 /* strikethrough.c */,
+				OBJ_56 /* syntax_extension.c */,
+				OBJ_57 /* table.c */,
+				OBJ_58 /* tagfilter.c */,
+				OBJ_59 /* utf8.c */,
+				OBJ_60 /* xml.c */,
+				OBJ_61 /* include */,
+			);
+			name = cmark;
+			path = ".build/checkouts/cmark-gfm.git--2110685907467657036/Sources/cmark";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_21 /* Tests */,
+				OBJ_22 /* SilverFox-gen */,
+				OBJ_23 /* Dependencies */,
+				OBJ_64 /* Products */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_61 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_62 /* cmark.h */,
+				OBJ_63 /* module.modulemap */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		OBJ_64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_65 /* cmark.framework */,
+				OBJ_66 /* SwiftMarkdown.framework */,
+				OBJ_67 /* Files.framework */,
+				OBJ_68 /* SilverFox-gen */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* SilverFox-gen */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* SilverFox-gen */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* ArticleGenerator.swift */,
+				OBJ_10 /* main.swift */,
+				OBJ_11 /* NewsItemGenerator.swift */,
+				OBJ_12 /* RSSGenerator.swift */,
+				OBJ_13 /* Model */,
+				OBJ_17 /* Util */,
+			);
+			path = "SilverFox-gen";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		OBJ_106 /* SwiftMarkdown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_107 /* Build configuration list for PBXNativeTarget "SwiftMarkdown" */;
+			buildPhases = (
+				OBJ_110 /* Sources */,
+				OBJ_112 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_114 /* PBXTargetDependency */,
+			);
+			name = SwiftMarkdown;
+			productName = SwiftMarkdown;
+			productReference = OBJ_66 /* SwiftMarkdown.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_115 /* Files */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_116 /* Build configuration list for PBXNativeTarget "Files" */;
+			buildPhases = (
+				OBJ_119 /* Sources */,
+				OBJ_121 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Files;
+			productName = Files;
+			productReference = OBJ_67 /* Files.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_122 /* SilverFox-gen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_123 /* Build configuration list for PBXNativeTarget "SilverFox-gen" */;
+			buildPhases = (
+				OBJ_126 /* Sources */,
+				OBJ_137 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_141 /* PBXTargetDependency */,
+				OBJ_142 /* PBXTargetDependency */,
+				OBJ_143 /* PBXTargetDependency */,
+			);
+			name = "SilverFox-gen";
+			productName = SilverFox_gen;
+			productReference = OBJ_68 /* SilverFox-gen */;
+			productType = "com.apple.product-type.tool";
+		};
+		OBJ_69 /* cmark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_70 /* Build configuration list for PBXNativeTarget "cmark" */;
+			buildPhases = (
+				OBJ_73 /* ShellScript */,
+				OBJ_74 /* Sources */,
+				OBJ_105 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cmark;
+			productName = cmark;
+			productReference = OBJ_65 /* cmark.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "SilverFox-gen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				OBJ_69 /* cmark */,
+				OBJ_106 /* SwiftMarkdown */,
+				OBJ_115 /* Files */,
+				OBJ_122 /* SilverFox-gen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		OBJ_73 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"${PROJECT_TEMP_DIR}/SymlinkLibs\"\nln -sf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${PROJECT_TEMP_DIR}/SymlinkLibs/lib${EXECUTABLE_NAME}.dylib\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_110 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_111 /* SwiftMarkdown.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_120 /* Files.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_127 /* ArticleGenerator.swift in Sources */,
+				OBJ_128 /* main.swift in Sources */,
+				OBJ_129 /* NewsItemGenerator.swift in Sources */,
+				OBJ_130 /* RSSGenerator.swift in Sources */,
+				OBJ_131 /* Article.swift in Sources */,
+				OBJ_132 /* ArticleMetadata.swift in Sources */,
+				OBJ_133 /* NewsItem.swift in Sources */,
+				OBJ_134 /* Array+Dictionary.swift in Sources */,
+				OBJ_135 /* String+Substring.swift in Sources */,
+				OBJ_136 /* String+SyntaxHighlighting.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_75 /* arena.c in Sources */,
+				OBJ_76 /* autolink.c in Sources */,
+				OBJ_77 /* blocks.c in Sources */,
+				OBJ_78 /* buffer.c in Sources */,
+				OBJ_79 /* cmark.c in Sources */,
+				OBJ_80 /* cmark_ctype.c in Sources */,
+				OBJ_81 /* commonmark.c in Sources */,
+				OBJ_82 /* core-extensions.c in Sources */,
+				OBJ_83 /* ext_scanners.c in Sources */,
+				OBJ_84 /* houdini_href_e.c in Sources */,
+				OBJ_85 /* houdini_html_e.c in Sources */,
+				OBJ_86 /* houdini_html_u.c in Sources */,
+				OBJ_87 /* html.c in Sources */,
+				OBJ_88 /* inlines.c in Sources */,
+				OBJ_89 /* iterator.c in Sources */,
+				OBJ_90 /* latex.c in Sources */,
+				OBJ_91 /* linked_list.c in Sources */,
+				OBJ_92 /* man.c in Sources */,
+				OBJ_93 /* node.c in Sources */,
+				OBJ_94 /* plugin.c in Sources */,
+				OBJ_95 /* references.c in Sources */,
+				OBJ_96 /* registry.c in Sources */,
+				OBJ_97 /* render.c in Sources */,
+				OBJ_98 /* scanners.c in Sources */,
+				OBJ_99 /* strikethrough.c in Sources */,
+				OBJ_100 /* syntax_extension.c in Sources */,
+				OBJ_101 /* table.c in Sources */,
+				OBJ_102 /* tagfilter.c in Sources */,
+				OBJ_103 /* utf8.c in Sources */,
+				OBJ_104 /* xml.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_114 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_69 /* cmark */;
+			targetProxy = BE3F25F31EDB67D800D58C83 /* PBXContainerItemProxy */;
+		};
+		OBJ_141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_69 /* cmark */;
+			targetProxy = BE3F25F41EDB67D800D58C83 /* PBXContainerItemProxy */;
+		};
+		OBJ_142 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_106 /* SwiftMarkdown */;
+			targetProxy = BE3F25F51EDB67D800D58C83 /* PBXContainerItemProxy */;
+		};
+		OBJ_143 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_115 /* Files */;
+			targetProxy = BE3F25F61EDB67D800D58C83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/cmark-gfm.git--2110685907467657036/Sources/cmark/include",
+					"$(SRCROOT)/SilverFox-gen.xcodeproj/GeneratedModuleMap/cmark",
+				);
+				INFOPLIST_FILE = "SilverFox-gen.xcodeproj/SwiftMarkdown_Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/SymlinkLibs/";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SilverFox-gen.xcodeproj/GeneratedModuleMap/cmark/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftMarkdown;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = SwiftMarkdown;
+			};
+			name = Debug;
+		};
+		OBJ_109 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/cmark-gfm.git--2110685907467657036/Sources/cmark/include",
+					"$(SRCROOT)/SilverFox-gen.xcodeproj/GeneratedModuleMap/cmark",
+				);
+				INFOPLIST_FILE = "SilverFox-gen.xcodeproj/SwiftMarkdown_Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/SymlinkLibs/";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SilverFox-gen.xcodeproj/GeneratedModuleMap/cmark/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftMarkdown;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = SwiftMarkdown;
+			};
+			name = Release;
+		};
+		OBJ_117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "SilverFox-gen.xcodeproj/Files_Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Files;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = Files;
+			};
+			name = Debug;
+		};
+		OBJ_118 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "SilverFox-gen.xcodeproj/Files_Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Files;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = Files;
+			};
+			name = Release;
+		};
+		OBJ_124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/cmark-gfm.git--2110685907467657036/Sources/cmark/include",
+					"$(SRCROOT)/SilverFox-gen.xcodeproj/GeneratedModuleMap/cmark",
+				);
+				INFOPLIST_FILE = "SilverFox-gen.xcodeproj/SilverFox_gen_Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/SymlinkLibs/";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SilverFox-gen.xcodeproj/GeneratedModuleMap/cmark/module.modulemap";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				TARGET_NAME = "SilverFox-gen";
+			};
+			name = Debug;
+		};
+		OBJ_125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/cmark-gfm.git--2110685907467657036/Sources/cmark/include",
+					"$(SRCROOT)/SilverFox-gen.xcodeproj/GeneratedModuleMap/cmark",
+				);
+				INFOPLIST_FILE = "SilverFox-gen.xcodeproj/SilverFox_gen_Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/SymlinkLibs/";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SilverFox-gen.xcodeproj/GeneratedModuleMap/cmark/module.modulemap";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				TARGET_NAME = "SilverFox-gen";
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/cmark-gfm.git--2110685907467657036/Sources/cmark/include",
+				);
+				INFOPLIST_FILE = "SilverFox-gen.xcodeproj/cmark_Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = cmark;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = cmark;
+			};
+			name = Debug;
+		};
+		OBJ_72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/cmark-gfm.git--2110685907467657036/Sources/cmark/include",
+				);
+				INFOPLIST_FILE = "SilverFox-gen.xcodeproj/cmark_Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = cmark;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = cmark;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_107 /* Build configuration list for PBXNativeTarget "SwiftMarkdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_108 /* Debug */,
+				OBJ_109 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_116 /* Build configuration list for PBXNativeTarget "Files" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_117 /* Debug */,
+				OBJ_118 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_123 /* Build configuration list for PBXNativeTarget "SilverFox-gen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_124 /* Debug */,
+				OBJ_125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "SilverFox-gen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_70 /* Build configuration list for PBXNativeTarget "cmark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_71 /* Debug */,
+				OBJ_72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
