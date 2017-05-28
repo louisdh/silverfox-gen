@@ -1,0 +1,2 @@
+# Silver Fox Generator
+A Swift command line tool that takes its input from [silverfox-articles](https://github.com/louisdh/silverfox-articles) and [silverfox-news](https://github.com/louisdh/silverfox-news). The generated output is static HTML pages for [silverfox.be](https://silverfox.be).
