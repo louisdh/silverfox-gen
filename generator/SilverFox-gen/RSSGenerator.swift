@@ -40,7 +40,7 @@ func generateRSS(for articles: [Article]) -> String {
 		let titleNode = XMLElement(name: "title", stringValue: article.metadata.title)
 		articleNode.addChild(titleNode)
 		
-		let linkNode = XMLElement(name: "link", stringValue: "https://silverfox.be/blog/\(article.fileName)")
+		let linkNode = XMLElement(name: "link", stringValue: "https://silverfox.be/articles/\(article.fileName)")
 		articleNode.addChild(linkNode)
 		
 		let descriptionNode = XMLElement(name: "description", stringValue: article.metadata.excerpt)
