@@ -14,7 +14,7 @@ extension String {
 	
 	var syntaxHighlightedHTMLAsSwift: String? {
 		
-		guard let prismJSFile = try? rootFolder.file(atPath: "SilverFox-gen/SilverFox-gen/js/prism.js") else {
+		guard let prismJSFile = try? rootFolder.file(atPath: "generator/SilverFox-gen/js/prism.js") else {
 			return nil
 		}
 		
