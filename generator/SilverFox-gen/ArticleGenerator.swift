@@ -144,6 +144,7 @@ extension Article {
 		html = articleHead + html + articleFoot
 		
 		html = html.replacingOccurrences(of: "{{title}}", with: metadata.title)
+		html = html.replacingOccurrences(of: "{{description}}", with: metadata.excerpt)
 		
 		self.metadata = metadata
 		self.content = html
