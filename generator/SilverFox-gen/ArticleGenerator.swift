@@ -32,26 +32,22 @@ extension Article {
 
 	var tileHtml: String {
 		
-		var html = ""
-		
-		// TODO: add indentation
-
-		html += "<a href=\"/articles/\(fileName)\">"
-		html += "<div class=\"tile blog-post\">"
-		html += "<span class=\"blog-post-wrapper\">"
-		html += "<h3>\(metadata.title)</h3>"
-		
-		html += "<p class=\"article-metadata-date\">\(metadata.formattedDate)</p>"
-		
-		html += "<span class=\"blog-post-excerpt\">"
-		html += metadata.excerpt
-		html += "</span>"
-		html += "</span>"
-		html += "<div>"
-		html += "<p>Read</p>"
-		html += "</div>"
-		html += "</div>"
-		html += "</a>"
+		let html = """
+		<a href=\"/articles/\(fileName)\">
+			<div class=\"tile blog-post\">
+				<span class=\"blog-post-wrapper\">
+					<h3>\(metadata.title)</h3>
+					<p class=\"article-metadata-date\">\(metadata.formattedDate)</p>
+					<span class=\"blog-post-excerpt\">
+						\(metadata.excerpt)
+					</span>
+				</span>
+				<div>
+					<p>Read</p>
+				</div>
+			</div>
+		</a>
+		"""
 
 		return html
 	}
@@ -109,14 +105,14 @@ extension Article {
 		
 		markdown = markdown.replacingOccurrences(of: origString, with: "")
 		
-		var header = ""
-		
-		header += "<div align=\"center\" class=\"article-metadata\">"
-		header += "<h1> \(metadata.title)</h1>"
-		header += "<p class=\"article-metadata-date\">\(formattedArticleDate)</p>"
-		header += "<p class=\"article-metadata-author\">by \(metadata.author)</p>"
-		header += "<p class=\"article-metadata-tags\">tags: \(metadata.tags.joined(separator: ", "))</p>"
-		header += "</div>\n"
+		let header = """
+		<div align=\"center\" class=\"article-metadata\">
+			<h1> \(metadata.title)</h1>
+			<p class=\"article-metadata-date\">\(formattedArticleDate)</p>
+			<p class=\"article-metadata-author\">by \(metadata.author)</p>
+			<p class=\"article-metadata-tags\">tags: \(metadata.tags.joined(separator: ", "))</p>
+		</div>\n
+		"""
 		
 		markdown.appendToFront(header)
 		
