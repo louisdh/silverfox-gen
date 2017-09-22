@@ -21,7 +21,7 @@ extension Array where Element == String {
 			}
 			
 			let start = e.index(e.startIndex, offsetBy: key.characters.count + separator.characters.count)
-			let value = e.substring(from: start)
+			let value = String(e[start...])
 			
 			dict[key] = value
 		}

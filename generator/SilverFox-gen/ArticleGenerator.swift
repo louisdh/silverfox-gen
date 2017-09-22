@@ -33,12 +33,12 @@ extension Article {
 	var tileHtml: String {
 		
 		let html = """
-		<a href=\"/articles/\(fileName)\">
-			<div class=\"tile blog-post\">
-				<span class=\"blog-post-wrapper\">
+		<a href="/articles/\(fileName)">
+			<div class="tile blog-post">
+				<span class="blog-post-wrapper">
 					<h3>\(metadata.title)</h3>
-					<p class=\"article-metadata-date\">\(metadata.formattedDate)</p>
-					<span class=\"blog-post-excerpt\">
+					<p class="article-metadata-date">\(metadata.formattedDate)</p>
+					<span class="blog-post-excerpt">
 						\(metadata.excerpt)
 					</span>
 				</span>
@@ -68,7 +68,9 @@ extension Article {
 			runtimeError("Invalid date format in \(file.name) file name, please provide in format: \"\(dateFormat)\"")
 		}
 		
-		let dateString = fileName.substring(to: fileName.index(fileName.startIndex, offsetBy: dateFormat.characters.count))
+		let dateEndIndex = fileName.index(fileName.startIndex, offsetBy: dateFormat.characters.count)
+		
+		let dateString = String(fileName[..<dateEndIndex])
 		
 		let formatter = DateFormatter()
 		formatter.dateFormat = dateFormat
@@ -106,11 +108,11 @@ extension Article {
 		markdown = markdown.replacingOccurrences(of: origString, with: "")
 		
 		let header = """
-		<div align=\"center\" class=\"article-metadata\">
+		<div align="center" class="article-metadata">
 			<h1> \(metadata.title)</h1>
-			<p class=\"article-metadata-date\">\(formattedArticleDate)</p>
-			<p class=\"article-metadata-author\">by \(metadata.author)</p>
-			<p class=\"article-metadata-tags\">tags: \(metadata.tags.joined(separator: ", "))</p>
+			<p class="article-metadata-date">\(formattedArticleDate)</p>
+			<p class="article-metadata-author">by \(metadata.author)</p>
+			<p class="article-metadata-tags">tags: \(metadata.tags.joined(separator: ", "))</p>
 		</div>\n
 		"""
 		
