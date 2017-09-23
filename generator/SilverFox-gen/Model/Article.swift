@@ -20,3 +20,15 @@ struct Article {
 		self.fileName = fileName
 	}
 }
+
+extension Article: Comparable {
+	
+	static func <(lhs: Article, rhs: Article) -> Bool {
+		return lhs.metadata < rhs.metadata
+	}
+	
+	static func ==(lhs: Article, rhs: Article) -> Bool {
+		return lhs.metadata == rhs.metadata
+	}
+	
+}

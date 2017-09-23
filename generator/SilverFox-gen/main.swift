@@ -9,30 +9,37 @@
 import Foundation
 import Files
 
-func runtimeError(_ message: String) -> Never {
-	print("❌ \(message)")
-	exit(0)
+extension Folder {
+	
+	func deleteAllFiles() throws {
+		for file in files {
+			try file.delete()
+		}
+	}
 }
 
-let arguments = CommandLine.arguments
-print(arguments)
+let startDate = Date()
+print(startDate)
 
-print(Date())
+//let arguments = CommandLine.arguments
+//print(arguments)
+
+
 print("Starting HTML generating 🚀 ...")
 
 
 let rootFolder = try Folder(path: "~/projects/oss/silverfox-gen")
 
+let componentsFolder = try rootFolder.subfolder(named: "components")
 
+let articleHead = try componentsFolder.file(atPath: "article-head.html").readAsString()
+let articleFoot = try componentsFolder.file(atPath: "article-foot.html").readAsString()
 
-let articleHead = try rootFolder.file(atPath: "components/article-head.html").readAsString()
-let articleFoot = try rootFolder.file(atPath: "components/article-foot.html").readAsString()
+let blogHead = try componentsFolder.file(atPath: "blog-head.html").readAsString()
+let blogFoot = try componentsFolder.file(atPath: "blog-foot.html").readAsString()
 
-let blogHead = try rootFolder.file(atPath: "components/blog-head.html").readAsString()
-let blogFoot = try rootFolder.file(atPath: "components/blog-foot.html").readAsString()
-
-let newsHead = try rootFolder.file(atPath: "components/news-head.html").readAsString()
-let newsFoot = try rootFolder.file(atPath: "components/news-foot.html").readAsString()
+let newsHead = try componentsFolder.file(atPath: "news-head.html").readAsString()
+let newsFoot = try componentsFolder.file(atPath: "news-foot.html").readAsString()
 
 let postsFolder = try Folder(path: "~/projects/oss/silverfox-articles")
 let newsFolder = try Folder(path: "~/projects/oss/silverfox-news")
@@ -42,9 +49,7 @@ let newsFolder = try Folder(path: "~/projects/oss/silverfox-news")
 let outputRoot = try Folder(path: "~/projects/oss/silverfox-site")
 let articlesOutputFolder = try outputRoot.subfolder(named: "articles")
 
-for file in articlesOutputFolder.files {
-	try file.delete()
-}
+try articlesOutputFolder.deleteAllFiles()
 
 var articles = [Article]()
 
@@ -63,9 +68,7 @@ for file in postsFolder.files {
 	
 }
 
-articles.sort { (a1, a2) -> Bool in
-	a1.metadata.date > a2.metadata.date
-}
+articles.sort(by: >)
 
 let homeArticles = articles.prefix(2)
 
@@ -124,5 +127,14 @@ let rssString = generateRSS(for: articles)
 try rssFile.write(string: rssString)
 
 print("🌈 All done!")
-print(Date())
+
+let endDate = Date()
+print(endDate)
+let formatter = DateComponentsFormatter()
+formatter.unitsStyle = .full
+formatter.allowsFractionalUnits = true
+formatter.includesApproximationPhrase = true
+if let formattedRunTime = formatter.string(from: endDate.timeIntervalSince(startDate)) {
+	print("Total run time: \(formattedRunTime)")
+}
 

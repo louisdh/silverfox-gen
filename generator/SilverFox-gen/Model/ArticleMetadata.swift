@@ -51,3 +51,17 @@ struct ArticleMetadata: HasDate {
 	}
 	
 }
+
+extension ArticleMetadata: Comparable {
+	
+	static func <(lhs: ArticleMetadata, rhs: ArticleMetadata) -> Bool {
+		return lhs.date < rhs.date || lhs.title < rhs.title
+	}
+	
+	static func ==(lhs: ArticleMetadata, rhs: ArticleMetadata) -> Bool {
+		return lhs.date == rhs.date
+			&& lhs.author == rhs.author
+			&& lhs.title == rhs.title
+	}
+	
+}

@@ -32,8 +32,9 @@ extension Article {
 
 	var tileHtml: String {
 		
+		let relativeLink = "/articles/\(fileName)"
 		let html = """
-		<a href="/articles/\(fileName)">
+		<a href="\(relativeLink)">
 			<div class="tile blog-post">
 				<span class="blog-post-wrapper">
 					<h3>\(metadata.title)</h3>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE71BDF11F768ED3005F7A66 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE71BDF01F768ED3005F7A66 /* Errors.swift */; };
 		OBJ_100 /* syntax_extension.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* syntax_extension.c */; };
 		OBJ_101 /* table.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* table.c */; };
 		OBJ_102 /* tagfilter.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* tagfilter.c */; };
@@ -87,6 +88,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE71BDF01F768ED3005F7A66 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		OBJ_10 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		OBJ_11 /* NewsItemGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemGenerator.swift; sourceTree = "<group>"; };
 		OBJ_12 /* RSSGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSGenerator.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				OBJ_18 /* Array+Dictionary.swift */,
 				OBJ_19 /* String+Substring.swift */,
 				OBJ_20 /* String+SyntaxHighlighting.swift */,
+				BE71BDF01F768ED3005F7A66 /* Errors.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				OBJ_131 /* Article.swift in Sources */,
 				OBJ_132 /* ArticleMetadata.swift in Sources */,
 				OBJ_133 /* NewsItem.swift in Sources */,
+				BE71BDF11F768ED3005F7A66 /* Errors.swift in Sources */,
 				OBJ_134 /* Array+Dictionary.swift in Sources */,
 				OBJ_135 /* String+Substring.swift in Sources */,
 				OBJ_136 /* String+SyntaxHighlighting.swift in Sources */,
