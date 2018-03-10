@@ -45,11 +45,11 @@ extension NewsItem {
 		
 		let dateFormat = "yyyy-MM-dd"
 		
-		guard fileName.characters.count > dateFormat.characters.count else {
+		guard fileName.count > dateFormat.count else {
 			runtimeError("Invalid date format in \(file.name) file name, please provide in format: \"\(dateFormat)\"")
 		}
 		
-		let dateEndIndex = fileName.index(fileName.startIndex, offsetBy: dateFormat.characters.count)
+		let dateEndIndex = fileName.index(fileName.startIndex, offsetBy: dateFormat.count)
 		let dateString = String(fileName[..<dateEndIndex])
 		
 		let formatter = DateFormatter()

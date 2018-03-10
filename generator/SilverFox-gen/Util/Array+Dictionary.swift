@@ -20,7 +20,7 @@ extension Array where Element == String {
 				return nil
 			}
 			
-			let start = e.index(e.startIndex, offsetBy: key.characters.count + separator.characters.count)
+			let start = e.index(e.startIndex, offsetBy: key.count + separator.count)
 			let value = String(e[start...])
 			
 			dict[key] = value
