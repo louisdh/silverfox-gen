@@ -162,7 +162,7 @@
 		OBJ_73 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = "/Users/louisdhauwe/projects/oss/silverfox-gen/generator/SilverFox-gen.xcodeproj/GeneratedModuleMap/cmark/module.modulemap"; sourceTree = "<group>"; };
 		OBJ_74 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/louisdhauwe/projects/oss/silverfox-gen/generator/.build/checkouts/cmark-gfm.git--2110685907467657036/Package.swift"; sourceTree = "<group>"; };
 		OBJ_9 /* ArticleGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleGenerator.swift; sourceTree = "<group>"; };
-		"SilverFox-gen::SilverFox-gen::Product" /* SilverFox-gen */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SilverFox-gen"; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SilverFox-gen::SilverFox-gen::Product" /* SilverFox-gen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "SilverFox-gen"; sourceTree = BUILT_PRODUCTS_DIR; };
 		"SwiftMarkdown::SwiftMarkdown::Product" /* SwiftMarkdown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftMarkdown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"cmark::cmark::Product" /* cmark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = cmark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -567,6 +567,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					"SilverFox-gen::SilverFox-gen" = {
+						LastSwiftMigration = 0920;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "SilverFox-gen" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -802,7 +807,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SilverFox-gen.xcodeproj/GeneratedModuleMap/cmark/module.modulemap";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = "SilverFox-gen";
 			};
 			name = Debug;
@@ -825,7 +830,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SilverFox-gen.xcodeproj/GeneratedModuleMap/cmark/module.modulemap";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = "SilverFox-gen";
 			};
 			name = Release;
