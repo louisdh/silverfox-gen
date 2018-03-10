@@ -9,6 +9,7 @@
 import Foundation
 import SwiftMarkdown
 import Files
+import HTMLString
 
 protocol HasDate {
 	
@@ -37,10 +38,10 @@ extension Article {
 		<a href="\(relativeLink)">
 			<div class="tile blog-post">
 				<span class="blog-post-wrapper">
-					<h3>\(metadata.title)</h3>
-					<p class="article-metadata-date">\(metadata.formattedDate)</p>
+					<h3>\(metadata.title.addingUnicodeEntities)</h3>
+					<p class="article-metadata-date">\(metadata.formattedDate.addingUnicodeEntities)</p>
 					<span class="blog-post-excerpt">
-						\(metadata.excerpt)
+						\(metadata.excerpt.addingUnicodeEntities)
 					</span>
 				</span>
 				<div>
@@ -65,11 +66,11 @@ extension Article {
 		
 		let dateFormat = "yyyy-MM-dd"
 		
-		guard fileName.characters.count > dateFormat.characters.count else {
+		guard fileName.count > dateFormat.count else {
 			runtimeError("Invalid date format in \(file.name) file name, please provide in format: \"\(dateFormat)\"")
 		}
 		
-		let dateEndIndex = fileName.index(fileName.startIndex, offsetBy: dateFormat.characters.count)
+		let dateEndIndex = fileName.index(fileName.startIndex, offsetBy: dateFormat.count)
 		
 		let dateString = String(fileName[..<dateEndIndex])
 		
@@ -110,10 +111,10 @@ extension Article {
 		
 		let header = """
 		<div align="center" class="article-metadata">
-			<h1> \(metadata.title)</h1>
+			<h1> \(metadata.title.addingUnicodeEntities)</h1>
 			<p class="article-metadata-date">\(formattedArticleDate)</p>
-			<p class="article-metadata-author">by \(metadata.author)</p>
-			<p class="article-metadata-tags">tags: \(metadata.tags.joined(separator: ", "))</p>
+			<p class="article-metadata-author">by \(metadata.author.addingUnicodeEntities)</p>
+			<p class="article-metadata-tags">tags: \(metadata.tags.joined(separator: ", ").addingUnicodeEntities)</p>
 		</div>\n
 		"""
 		
