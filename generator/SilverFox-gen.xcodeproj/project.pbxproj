@@ -67,35 +67,35 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BEB06840205479AA00961CA3 /* PBXContainerItemProxy */ = {
+		BEB0684520547CC500961CA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "HTMLString::HTMLString";
 			remoteInfo = HTMLString;
 		};
-		BEB06841205479AA00961CA3 /* PBXContainerItemProxy */ = {
+		BEB0684620547CC500961CA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Files::Files";
 			remoteInfo = Files;
 		};
-		BEB06842205479AA00961CA3 /* PBXContainerItemProxy */ = {
+		BEB0684720547CC500961CA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SwiftMarkdown::SwiftMarkdown";
 			remoteInfo = SwiftMarkdown;
 		};
-		BEB06843205479AA00961CA3 /* PBXContainerItemProxy */ = {
+		BEB0684820547CC500961CA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "cmark::cmark";
 			remoteInfo = cmark;
 		};
-		BEB06844205479AA00961CA3 /* PBXContainerItemProxy */ = {
+		BEB0684920547CC500961CA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -243,7 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_25 /* HTMLString 4.0.1 */,
-				OBJ_32 /* Files 1.12.0 */,
+				OBJ_32 /* Files 2.0.1 */,
 				OBJ_35 /* SwiftMarkdown 0.4.0 */,
 				OBJ_39 /* cmark 1.0.0 */,
 			);
@@ -271,13 +271,13 @@
 			path = ".build/checkouts/HTMLString--7409299665809163240/Sources/HTMLString";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_32 /* Files 1.12.0 */ = {
+		OBJ_32 /* Files 2.0.1 */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_33 /* Package.swift */,
 				OBJ_34 /* Files.swift */,
 			);
-			name = "Files 1.12.0";
+			name = "Files 2.0.1";
 			path = ".build/checkouts/Files.git-6739420172119258925/Sources";
 			sourceTree = SOURCE_ROOT;
 		};
@@ -566,7 +566,7 @@
 		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 9999;
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "SilverFox-gen" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -723,27 +723,27 @@
 		OBJ_132 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "HTMLString::HTMLString" /* HTMLString */;
-			targetProxy = BEB06840205479AA00961CA3 /* PBXContainerItemProxy */;
+			targetProxy = BEB0684520547CC500961CA3 /* PBXContainerItemProxy */;
 		};
 		OBJ_134 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Files::Files" /* Files */;
-			targetProxy = BEB06841205479AA00961CA3 /* PBXContainerItemProxy */;
+			targetProxy = BEB0684620547CC500961CA3 /* PBXContainerItemProxy */;
 		};
 		OBJ_136 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SwiftMarkdown::SwiftMarkdown" /* SwiftMarkdown */;
-			targetProxy = BEB06842205479AA00961CA3 /* PBXContainerItemProxy */;
+			targetProxy = BEB0684720547CC500961CA3 /* PBXContainerItemProxy */;
 		};
 		OBJ_138 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "cmark::cmark" /* cmark */;
-			targetProxy = BEB06844205479AA00961CA3 /* PBXContainerItemProxy */;
+			targetProxy = BEB0684920547CC500961CA3 /* PBXContainerItemProxy */;
 		};
 		OBJ_162 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "cmark::cmark" /* cmark */;
-			targetProxy = BEB06843205479AA00961CA3 /* PBXContainerItemProxy */;
+			targetProxy = BEB0684820547CC500961CA3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -891,7 +891,7 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = Files;
 			};
 			name = Debug;
@@ -913,7 +913,7 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = Files;
 			};
 			name = Release;
@@ -1024,36 +1024,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "-DXcode";
@@ -1070,34 +1046,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1149,8 +1102,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1158,8 +1111,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
